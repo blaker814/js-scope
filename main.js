@@ -55,11 +55,11 @@ const llamaNamer = () => {
 
     const namer = () => {
         name = possibleNames[randomizer]
-        name + suffix
+        return name + suffix
     }
-    return namer();
+    return namer;
     
 }
 
 const nameMaker = llamaNamer()
-console.log(nameMaker)
+console.log(nameMaker())
